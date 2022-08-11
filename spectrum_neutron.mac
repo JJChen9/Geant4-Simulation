@@ -1,0 +1,115 @@
+#This is yaqian data, which is very old data without absorber in upstream
+
+
+/gps/particle neutron
+##########################
+/gps/pos/type Beam
+/gps/pos/centre 0 0 -25 cm
+/gps/pos/sigma_r 462 mm
+/gps/direction 0 0 1
+
+##########################
+/gps/ene/type Arb
+/gps/ene/diffspec 1
+/gps/hist/type arb
+##########################
+
+/gps/hist/point 0.13  16000000.0
+/gps/hist/point 0.14  16000000.0
+/gps/hist/point 0.16  16000000.0
+/gps/hist/point 0.18  15990000.0
+/gps/hist/point 0.20  15990000.0
+/gps/hist/point 0.22  15990000.0
+/gps/hist/point 0.24  15980000.0
+/gps/hist/point 0.27  15980000.0
+/gps/hist/point 0.30  15980000.0
+/gps/hist/point 0.33  15980000.0
+/gps/hist/point 0.37  15970000.0
+/gps/hist/point 0.41  15970000.0
+/gps/hist/point 0.45  15970000.0
+/gps/hist/point 0.50  15970000.0
+/gps/hist/point 0.56  15960000.0
+/gps/hist/point 0.62  15960000.0
+/gps/hist/point 0.69  15960000.0
+/gps/hist/point 0.77  15960000.0
+/gps/hist/point 0.86  15950000.0
+/gps/hist/point 0.95  15950000.0
+/gps/hist/point 1.06  15760000.0
+/gps/hist/point 1.11  10480000.0
+/gps/hist/point 1.11  7030000.0
+/gps/hist/point 1.17  5889000.0
+/gps/hist/point 1.30  5889000.0
+/gps/hist/point 1.45  5888000.0
+/gps/hist/point 1.61  5887000.0
+/gps/hist/point 1.79  5886000.0
+/gps/hist/point 1.99  5815000.0
+/gps/hist/point 2.10  3869000.0
+/gps/hist/point 2.10  2900000.0
+/gps/hist/point 2.11  5161000.0
+/gps/hist/point 2.19  2021000.0
+/gps/hist/point 2.43  1982000.0
+/gps/hist/point 2.70  1982000.0
+/gps/hist/point 2.97  1930000.0
+/gps/hist/point 3.19  1105000.0
+/gps/hist/point 3.57  1062000.0
+/gps/hist/point 3.96  1037000.0
+/gps/hist/point 4.40  963300.0
+/gps/hist/point 4.89  941500.0
+/gps/hist/point 5.43  844700.0
+/gps/hist/point 5.88  857900.0
+/gps/hist/point 6.04  1127000.0
+/gps/hist/point 6.33  1693000.0
+/gps/hist/point 6.87  1676000.0
+/gps/hist/point 7.04  1126000.0
+/gps/hist/point 7.04  844300.0
+/gps/hist/point 7.36  555100.0
+/gps/hist/point 8.21  475900.0
+/gps/hist/point 9.12  382200.0
+/gps/hist/point 10.13  307600.0
+/gps/hist/point 11.26  249100.0
+/gps/hist/point 12.51  193900.0
+/gps/hist/point 13.90  177300.0
+/gps/hist/point 15.42  189300.0
+/gps/hist/point 17.14  227400.0
+/gps/hist/point 19.07  282700.0
+/gps/hist/point 21.19  295400.0
+/gps/hist/point 23.43  265200.0
+/gps/hist/point 25.30  194200.0
+/gps/hist/point 26.67  143300.0
+/gps/hist/point 27.86  98390.0
+/gps/hist/point 29.07  66110.0
+/gps/hist/point 30.07  47760.0
+/gps/hist/point 31.09  32400.0
+/gps/hist/point 32.16  21600.0
+/gps/hist/point 33.26  14410.0
+/gps/hist/point 34.23  8922.0
+/gps/hist/point 35.06  5878.0
+/gps/hist/point 35.92  3724.0
+/gps/hist/point 36.97  2183.0
+/gps/hist/point 38.05  1346.0
+/gps/hist/point 39.17  823.4
+/gps/hist/point 39.74  519.1
+/gps/hist/point 40.77  359.7
+/gps/hist/point 41.90  252.5
+/gps/hist/point 42.44  156.1
+/gps/hist/point 43.33  122.8
+/gps/hist/point 43.96  87.1
+/gps/hist/point 45.46  69.9
+/gps/hist/point 45.90  47.3
+/gps/hist/point 46.35  29.0
+/gps/hist/point 47.56  20.4
+/gps/hist/point 48.87  15.1
+/gps/hist/point 49.90  10.7
+/gps/hist/point 51.52  8.0
+/gps/hist/point 51.52  6.0
+/gps/hist/point 53.80  3.8
+/gps/hist/point 53.80  2.9
+/gps/hist/point 54.59  1.9
+/gps/hist/point 54.70  1.3
+/gps/hist/point 55.23  1.0
+/gps/hist/point 56.98  3.7
+/gps/hist/point 56.99  2.7
+/gps/hist/point 57.35  0.8
+/gps/hist/point 58.28  0.5
+##########################
+/gps/hist/inter Lin

@@ -1,0 +1,207 @@
+# Macro file for the visualization setting for the initialization phase 
+# of the B4 example when running in interactive mode
+#
+
+# Use these open statements to open selected visualization
+#
+# Use this open statement to create an OpenGL view:
+/vis/open OGL 600x600-0+0
+#
+# Use this open statement to create an OpenInventor view:
+#/vis/open OIX
+#
+# Use this open statement to create a .prim file suitable for
+# viewing in DAWN:
+#/vis/open DAWNFILE
+#
+# Use this open statement to create a .heprep file suitable for
+# viewing in HepRApp:
+#/vis/open HepRepFile
+#
+# Use this open statement to create a .wrl file suitable for
+# viewing in a VRML viewer:
+#/vis/open VRML2FILE
+#
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+#
+# Draw geometry:
+/vis/drawVolume
+#
+# Specify view angle:
+/vis/viewer/set/viewpointThetaPhi 90. 180.
+#
+# Specify zoom value:
+#/vis/viewer/zoom 2.
+#
+# Specify style (surface, wireframe, auxiliary edges,...)
+#/vis/viewer/set/style wireframe
+#/vis/viewer/set/auxiliaryEdge true
+#/vis/viewer/set/lineSegmentsPerCircle 100
+#
+# Draw coordinate axes:
+#/vis/scene/add/axes 0 0 0 1 m
+#
+# Draw smooth trajectories at end of event, showing trajectory points
+# as markers 2 pixels wide:
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+#
+# Draw hits at end of event:
+#/vis/scene/add/hits
+#
+# To draw only gammas:
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add gamma
+#
+# To invert the above, drawing all particles except gammas,
+# keep the above two lines but also add:
+#/vis/filtering/trajectories/particleFilter-0/invert true
+#
+# Many other options are available with /vis/modeling and /vis/filtering.
+# For example, to select colour by particle ID:
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+# To select or override default colours (note: e+ is blue by default):
+#/vis/modeling/trajectories/list
+#/vis/modeling/trajectories/drawByParticleID-0/set e+ yellow
+#
+# To superimpose all of the events from a given run:
+/vis/scene/endOfEventAction accumulate
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+#
+# For file-based drivers, use this to create an empty detector view:
+#/vis/viewer/flush
+
+/vis/geometry/set/colour fLaBrLV 1 yellow
+/vis/geometry/set/colour fHPGeLV 1 brown
+/vis/geometry/set/colour HoleLV 1 yellow
+
+/vis/geometry/set/colour AluminumTwallLV 1 white
+/vis/geometry/set/colour CopperTwallLV 1 orange
+/vis/geometry/set/colour LeadTwallLV1 1 gray
+/vis/geometry/set/colour LeadTwallLV2 1 gray
+/vis/geometry/set/colour BPTwallLV 1 blue
+/vis/geometry/set/colour CopperskirtLLV 1 orange
+/vis/geometry/set/colour CopperskirtRLV 1 orange
+/vis/geometry/set/colour CopperskirtR2LV 1 orange
+
+/vis/geometry/set/colour LeadskirtLLV 1 gray
+/vis/geometry/set/colour LeadskirtRLV 1 gray
+/vis/geometry/set/colour LeadskirtR2LV 1 gray
+/vis/geometry/set/colour TopGap_LBlockLV 1 gray
+/vis/geometry/set/colour TopGap_RBlockLV 1 gray
+
+
+/vis/geometry/set/colour AluminumBwallLV 1 white
+/vis/geometry/set/colour CopperBwallLV 1 orange
+/vis/geometry/set/colour LeadBwallLV 1 gray
+/vis/geometry/set/colour BPBwallLV 1 blue
+
+/vis/geometry/set/colour AluminumFwallLV 1 white
+/vis/geometry/set/colour CopperFwallLV 1 orange
+/vis/geometry/set/colour Lead1FwallLV 1 gray
+/vis/geometry/set/colour Lead2FwallLV 1 gray
+/vis/geometry/set/colour Lead3FwallLV 1 gray
+/vis/geometry/set/colour BP0FwallLV 1 blue
+/vis/geometry/set/colour BP1FwallLV 1 blue
+/vis/geometry/set/colour BP2FwallLV 1 blue
+/vis/geometry/set/colour FrontLeadBlockLV1 1 gray
+/vis/geometry/set/colour FrontLeadBlockLV2 1 gray
+/vis/geometry/set/colour FrontLeadBlockLV3 1 gray
+
+/vis/geometry/set/colour AluminumLwallLV 1 white
+/vis/geometry/set/colour CopperLwallLV 1 orange
+/vis/geometry/set/colour LeadLwallLV 1 gray
+/vis/geometry/set/colour BPLwallLV 1 blue
+
+/vis/geometry/set/colour AluminumRwallLV 1 white
+/vis/geometry/set/colour CopperRwallLV 1 orange
+/vis/geometry/set/colour LeadRwallLV 1 gray
+/vis/geometry/set/colour BPRwallLV 1 blue
+
+
+
+/vis/geometry/set/colour Cup1LV 1 white
+/vis/geometry/set/colour Cup2LV 1 white
+
+
+/vis/geometry/set/colour LeadBackBlockLV 1 grey
+/vis/geometry/set/colour CopperBackBlockLV 1 orange
+/vis/geometry/set/colour AluminumBackBlockLV 1 white
+/vis/geometry/set/colour BPBackLV 1 blue
+
+
+
+
+/vis/geometry/set/colour LeadInnerLV 1 grey
+/vis/geometry/set/colour innershieldLV 1 grey
+/vis/geometry/set/colour CopperInnerLV1 1 orange 
+/vis/geometry/set/colour CopperInnerLV2 1 orange
+/vis/geometry/set/colour CopperInnerLV3 1 orange
+/vis/geometry/set/colour AluminumInnerLV1 1 white 
+/vis/geometry/set/colour AluminumInnerLV2 1 white
+/vis/geometry/set/colour AluminumInnerLV3 1 white
+
+/vis/geometry/set/colour AirWallXLV 1 green
+/vis/geometry/set/colour AirWallZLV 1 green
+
+
+/vis/geometry/set/colour LeadInnerSLVL 1 grey
+/vis/geometry/set/colour LeadInnerSLVR 1 grey
+/vis/geometry/set/colour LeadInnerSLVTrap 1 grey
+
+/vis/geometry/set/colour LeadInnerFLV 1 grey
+/vis/geometry/set/colour LeadInnerS_extLV 1 grey
+/vis/geometry/set/colour LeadInnerF_extLV 1 grey
+
+
+/vis/geometry/set/colour CopperInnerSLVR 1 orange
+/vis/geometry/set/colour CopperInnerSLVL 1 orange
+/vis/geometry/set/colour CopperInnerSLVF 1 orange
+/vis/geometry/set/colour CopperInnerSLVB 1 orange
+
+/vis/geometry/set/colour CopperInnerSLV2 1 orange
+/vis/geometry/set/colour CopperInnerSLV3 1 orange
+/vis/geometry/set/colour CopperInnerFLV 1 orange
+/vis/geometry/set/colour CopperInnerS_extLV 1 orange
+/vis/geometry/set/colour CopperInnerF_extLV 1 orange
+#/vis/geometry/set/colour AluminumInnerSLV1 1 white
+#/vis/geometry/set/colour AluminumInnerSLV2 1 white
+#/vis/geometry/set/colour AluminumInnerSLV3 1 white
+/vis/geometry/set/colour AluminumInnerFLV 1 white
+/vis/geometry/set/colour AluminumInnerS_extLV 1 white
+/vis/geometry/set/colour AluminumInnerF_extLV 1 white
+
+/vis/geometry/set/colour CopperFrontEdgeLV1 1 orange
+/vis/geometry/set/colour AluminumFrontEdgeLV1 1 white
+/vis/geometry/set/colour CopperFrontEdgeLV2 1 orange
+/vis/geometry/set/colour AluminumFrontEdgeLV2 1 white
+/vis/geometry/set/colour CopperFrontEdgeLV3 1 orange
+/vis/geometry/set/colour AluminumFrontEdgeLV3 1 white
+/vis/geometry/set/colour SupportLV 1 cyan
+
+/vis/geometry/set/colour AirHole_LaBrLV 1 green
+/vis/geometry/set/colour AirHole_HPGeLV 1 green
+
+/vis/geometry/set/colour SSCLeakLV_l 1 green
+/vis/geometry/set/colour SSCLeakLV_r 1 green
+/vis/geometry/set/colour SSCLeakLV_t 1 green
+/vis/geometry/set/colour SSCLeakLV_b 1 green
+/vis/geometry/set/colour SSCLeakLV_back 1 green
+
+/vis/geometry/set/colour RoofLeakLV 1 green
+/vis/geometry/set/colour AirTwallLV 1 green
+
+/vis/geometry/set/colour AbsorberLV 1 red
+/vis/geometry/set/colour VD101LV 1 green
+
+

@@ -1,0 +1,25 @@
+
+# Macro file for "TestEm14.cc"
+# (can be run in batch, without graphic)
+#
+# photon 300 keV; compton
+#
+/control/verbose 2
+/run/verbose 2
+#
+#
+#/testem/phys/addPhysics standard
+#
+/run/initialize
+#
+/run/setCut 1000 nm
+/run/setCutForAGivenParticle gamma 1000 nm
+/run/setCutForAGivenParticle e+ 1000 nm
+/run/setCutForAGivenParticle e- 1000 nm
+
+
+#
+/analysis/setFileName HPGe_gamma1
+/control/execute Poly176_gamma1.mac
+/run/beamOn 100
+#/run/beamOn 35560700

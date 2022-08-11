@@ -1,0 +1,24 @@
+# $Id: compton.mac 82438 2014-06-20 10:37:29Z gcosmo $
+#
+# Macro file for "TestEm14.cc"
+# (can be run in batch, without graphic)
+#
+# photon 300 keV; compton
+#
+/control/verbose 2
+/run/verbose 2
+#
+#
+#/testem/phys/addPhysics standard
+#
+/run/initialize
+#
+/run/setCut 1000 nm
+#
+#/analysis/setFileName Poly176_gamma1_2F4B_0P5LaBr_0P
+/analysis/setFileName Poly176_gamma1_12P5inch_6spill
+/control/execute Poly176_gamma1.mac
+
+#/run/beamOn 15020336
+#/run/beamOn 312040730 #2spills time
+/run/beamOn 936122190  #6spills time

@@ -1,0 +1,23 @@
+# $Id: compton.mac 82439 2014-06-20 10:37:29Z gcosmo $
+#
+# Macro file for "TestEm14.cc"
+# (can be run in batch, without graphic)
+#
+# photon 300 keV; compton
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/phys/addPhysics standard
+#
+/run/initialize
+#
+/run/setCut 1 nm
+#
+/process/inactivate phot
+/process/inactivate conv
+/process/inactivate GammaToMuPair
+#
+/gun/particle gamma
+#
+/run/beamOn 10
